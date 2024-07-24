@@ -26,8 +26,24 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+@layer components {
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+  .scrollbar-hidden {
+    ::-webkit-scrollbar {
+      display: none;
+    }
+
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
   }
 }
